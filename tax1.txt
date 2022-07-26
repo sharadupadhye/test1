@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class method1 {
+		   public static double  slab1(double tax) { 
+		   double sum =0.2*tax+5;
+		   return tax;
+		    }
+		   public static double  slab2(double tax) { 
+			   double sum =0.2*tax+5;
+			   return tax;
+			    }
+		   public static double  slab3(double tax) { 
+			   double sum =0.2*tax+5;
+			   return tax;
+			    }
+		   public static double  slab4(double tax) { 
+			   double sum =0.2*tax+5;
+			   return tax;
+			    }
+		   public static double  slab5(double tax) { 
+			   double sum =0.2*tax+5;
+			   return tax;
+			    }
+		   public static double  slab6(double tax) { 
+			   double sum =0.2*tax+5;
+			   return tax;
+			    }
+   public static void main(String args[]) {
+      method1 test = new method1();
+      double tax=0;
+  	int taxable_income=0;
+  	int income=0;
+      int investment=0;
+      Scanner sc=new Scanner(System.in);
+    	System.out.println("Enter income\n");
+    	income=sc.nextInt();
+    	System.out.println("Enter investment\n");
+    	investment=sc.nextInt();
+    	taxable_income=income-investment;
+      if(taxable_income>=0 && taxable_income<=100)
+  		tax=test.slab1(taxable_income);
+  	System.out.println("Payable1 tax is+"+ tax);
+  	else if(taxable_income>=200 && taxable_income<=300)
+  		test.slab2(taxable_income);
+  	System.out.println("Payable1 tax is+"+ tax);
+  	else 	if(taxable_income>=301 && taxable_income<=400)
+  		test.slab3(taxable_income);
+  	System.out.println("Payable1 tax is+"+ tax);
+  	 if(taxable_income>=401 && taxable_income<=500)
+  		test.slab4(taxable_income);
+  	System.out.println("Payable1 tax is+"+ tax);
+  	if(taxable_income>=501 && taxable_income<=600)
+  		test.slab5(taxable_income);
+  	System.out.println("Payable1 tax is+"+ tax);
+  	 if(taxable_income>=601)
+  		test.slab6(taxable_income);
+  	System.out.println("Payable1 tax is+"+ tax);
+  		
+     }
+}
